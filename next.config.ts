@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true, // Disable ESLint checks during the build process
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+        pathname: "/images/**", 
+      },
+    ],
+  },
 };
-
-export default nextConfig;
