@@ -34,17 +34,6 @@ export default {
       options: {
         source: "title",
       },
-    },
-    {
-      name: "comments",
-      title: "Comments",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: [{ type: "comment" }], 
-        },
-      ],
-    },
+    },  
   ],
 };
